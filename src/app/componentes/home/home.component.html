@@ -1,10 +1,30 @@
+<!--
 <div>
     <h1>Proyecto de computación II</h1>
 </div>
 
 <div class="M-4">
-    <img src="../../assets/edu.jpg" alt="">
-    <img src="../../assets/victor.jpg" alt="">
-    <img src="../../assets/yul.jpg" alt="">
-    <img src="../../assets/alex.jpg" alt="">
+    <img src="../../assets/edu.jpg" alt="edu_img">
+    <img src="../../assets/victor.jpg" alt="victor_img">
+    <img src="../../assets/yul.jpg" alt="yul_img">
+    <img src="../../assets/alex.jpg" alt="alex_img">
 </div>
+
+-->
+<div class="container-fluid">
+  
+    <h1>Angular Bootstrap Carousel Example - ItSolutionStuff.com</h1>
+      
+    <ngb-carousel>
+      <ng-template ngbSlide *ngFor="let image of images">
+        <div class="wrapper">
+          <img [src]="image.src" alt="Random first slide">
+        </div>
+        <div class="carousel-caption">
+          <h3>{{ image.title }}</h3>
+          <p>{{ image.short }}</p>
+        </div>
+      </ng-template>
+    </ngb-carousel>
+        
+    </div>

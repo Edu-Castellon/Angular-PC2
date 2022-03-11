@@ -6,6 +6,8 @@ import { NavbarComponent } from './componentes/navbar/navbar.component';
 import { HomeComponent } from './componentes/home/home.component';
 import { ImagenesComponent } from './componentes/imagenes/imagenes.component';
 import { AnalisisComponent } from './componentes/analisis/analisis.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -23,7 +25,9 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    BrowserAnimationsModule,
+    NgbModule
   ],
   exports: [RouterModule],
   providers: [],
