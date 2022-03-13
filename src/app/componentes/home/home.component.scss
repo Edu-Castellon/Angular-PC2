@@ -1,4 +1,4 @@
-div {
+.container-fluid {
     height: 100px;
     color: black;
     background: rgb(206, 198, 179);
@@ -6,10 +6,13 @@ div {
 
 h1{
     font-weight: 700;
-    font-size: 88px;
+    font-size: 70px;
     text-align: center;
 }
 
+h2 {
+    text-align: center;
+}
 
 ngb-carousel .wrapper {
     position:relative;
@@ -56,4 +59,12 @@ h3 {
 p {
     color:black;
     text-decoration: dotted;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
