@@ -1,16 +1,18 @@
-<body background="https://www.itl.cat/pngfile/big/42-429842_light-grey-background-wallpaper-light-grey-background-wallpaper.jpg">
+<body>
     
-
     <h1>Análisis de sentimiento</h1>
     <h4>Introduzca el texto a analizar:</h4>
-    <textarea name="comentarios" rows="10" cols="100"></textarea>
-    <br>
-    <div class="bt">
-        <a class="boton" href="http://laweb.com" target="_blank">Realizar análisis</a>
-    </div>
+    <form (ngSubmit)="analizar()">
+        <textarea [(ngModel)]="texto" name="comentarios" rows="10" cols="100"></textarea>
+        <br>
+
+        <div class="bt">
+            <button type="submit" class="boton" target="_blank">Realizar análisis</button>
+        </div>
+    </form>
     <br><br>
     <div>
-        <input type="text" name="nombredelacaja">
+        <input type="text" name="nombredelacaja" [placeholder]="resultado" readonly>
     </div>
 
    
